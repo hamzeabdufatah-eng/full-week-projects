@@ -15,9 +15,13 @@
     </div>
   </body>
   <script>
+    const parent=document.getElementById("parent")
+ const firstC=parent.firstElementChild;
+ firstC.remove()
+ console.log(parent)
     //1 parent element
 // const child=document.getElementById("first-Child")
-    // console.log(child.parentElement)
+//     console.log(child.parentElement)
 // const child=document.getElementById("middle-Child")
 // console.log(child.parentElement.parentNode.id)
 //2 children elements
@@ -39,8 +43,8 @@
 //console.log(middleChild.parentNode.id)
 
 //2
- //const parent=document.getElementById("parent")
- //console.log(parent.firstElementChild.id)
+//  const parent=document.getElementById("parent")
+//  //console.log(parent.firstElementChild.id)
 // console.log(parent.children[1].id)
 
 // 3 nextELlementSibling

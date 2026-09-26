@@ -11,9 +11,18 @@
 //         console.log(i)
 //     }
 // }
+// const kharashkaMaanta=[2000,-500,-320,3000]
+// for(let i=0; i<4; i++){
+//     if(kharashkaMaanta[i]>0){
+//         console.log(`faaiido: $${kharashkaMaanta[i]}`)
+//     }
+//     else{
+//         console.log(`waxaKuiibsaday: $${kharashkaMaanta[i]}`)
+//     }
+// }
 
-// //   real scenario
-// const transections = [100, -50, -30, 500];
+// // //   real scenario
+// // const transections = [100, -50, -30, 500];
 //   for (let i = 0; i <transections.length; i++) {
 //     if (transections[i] > 0){ console.log(`deposit: $${transections[i]}`);
 //   }  else {
@@ -79,3 +88,21 @@
 //      console.log("count" + count)
 //      count++
 //  }while(count<=5)
+// let tiri=100
+// do{
+//     console.log("tufo"+tiri)
+//     tiri++
+// }while(tiri<=105)
+
+// let blance=500
+// let withdrowelAmount
+// while(true){
+//     withdrowelAmount= prompt(`your blance is: $${blance} .how much to withdrow`)
+// if(withdrowelAmount <= blance && withdrowelAmount>0){
+//     blance -=withdrowelAmount
+//     console.log(`withdrowelAmount:$${withdrowelAmount}.new Blacne is $${blance}`)
+//     break
+// }else{
+//     console.log("invalid amount")
+// }
+// }

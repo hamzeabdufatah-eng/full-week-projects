@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      .book {
+        background: #eef;
+        border: 1px solid #99c;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      select,
+      button {
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 4px;
+      }
+      #fileSizeGroup {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter Book Info</h1>
+    <form id="bookForm">
+      <label for="bookType">select Type</label>
+      <select id="bookType" name="bookType" required>
+        <option value="Book">Book</option>
+        <option value="EBook">EBook</option>
+      </select>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required />
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required />
+
+      <label for="year">Year Puplished</label>
+      <input
+        type="number"
+        id="year"
+        name="year"
+        min="1000"
+        max="21000"
+        required
+      />
+
+      <div id="fileSizeGroup">
+        <label for="fileSize">File Size (MB):</label>
+        <input type="number" id="fileSize" name="fileSize" min="0" step="0.1" />
+      </div>
+      <button type="submit">Add Book</button>
+    </form>
+    <h2>Library Books</h2>
+    <div id="library"></div>
+    <script>
+      class Book {
+        constructor(title, author, year) {
+          this._title = title;
+          this._author = author;
+          this._year = year;
+        }
+        getDetails() {
+          return `${this._title} by ${this._author},puplished in ${this._year}`;
+        }
+      }
+      class EBook extends Book {
+        constructor(title, author, year, fileSizeMB) {
+          super(title, author, year);
+          this._fileSizeMB = fileSizeMB;
+        }
+        getDetails() {
+          return `${this._title} by ${this._author}, published in ${this._year},file size ${this._fileSizeMB}`;
+        }
+      }
+      const bookForm = document.getElementById("bookForm");
+      const bookType = document.getElementById("bookType");
+      const fileSizeGroup = document.getElementById("fileSizeGroup");
+      const library = document.getElementById("library");
+
+      // show /hide file size based on type
+      bookType.addEventListener("change", () => {
+        if (bookType.value === "EBook") {
+          fileSizeGroup.style.display = `block`;
+        } else {
+          fileSizeGroup.style.display = `none`;
+        }
+      });
+      function displayBook(book) {
+        const div = document.createElement("div");
+        div.textContent = book.getDetails();
+        library.appendChild(div);
+      }
+      bookForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const title = bookForm.title.value.trim();
+        const author = bookForm.author.value.trim();
+        const year = bookForm.year.value;
+        const type = bookType.value;
+        if (type === "Book") {
+          const book = new Book(title, author, year);
+          displayBook(book);
+        } else if (type === "EBook") {
+          const fileSize = bookForm.fileSize.value;
+          const ebook = new EBook(title, author, year, fileSize);
+          displayBook(ebook);
+        }
+        bookForm.reset()
+      });
+    </script>
+  </body>
+</html>

@@ -38,7 +38,7 @@
     </style>
   </head>
   <body>
-    <div class="container" id="loginSesion">
+    <!-- <div class="container" id="loginSesion">
       <h2>login</h2>
       <input type="text" id="userName" placeholder="enter your name" />
       <button onclick="login()">login</button>
@@ -46,33 +46,34 @@
     <div class="container" id="wellcomeSection" style="display: none">
       <h2 id="wellcomeMessage"></h2>
       <button onclick="logout()">logout</button>
-    </div>
+    </div> -->
     <script>
-        window.onload=function(){
-            const user=localStorage.getItem("username")
-            if(user){
-                wellcomeMessage(user)
-            }
-        }
-      function login() { 
-        const userName = document.getElementById("userName").value;
-        if (userName.trim() == "") {
-          alert("please enter your name");
-        }
-        localStorage.setItem("username", userName);
-        location.reload()
-    }
-      function wellcomeMessage(name) {
-        document.getElementById("loginSesion").style.display = "none";
-        document.getElementById("wellcomeSection").style.display="block"
-        document.getElementById("wellcomeMessage").innerText=`wellcome ${name}`
+      // login()
 
-      }
-      function logout(){
-        localStorage.removeItem("username")
-        location.reload()
-      }
-   
+      //     window.onload=function(){
+      //         const user=localStorage.getItem("username")
+      //         if(user){
+      //             wellcomeMessage(user)
+      //         }
+      //     }
+      //   function login() {
+      //     const userName = document.getElementById("userName").value;
+      //     if (userName.trim() == "") {
+      //       alert("please enter your name");
+      //     }
+      //     localStorage.setItem("username", userName);
+      //     location.reload()
+      // }
+      //   function wellcomeMessage(name) {
+      //     document.getElementById("loginSesion").style.display = "none";
+      //     document.getElementById("wellcomeSection").style.display="block"
+      //     document.getElementById("wellcomeMessage").innerText=`wellcome ${name}`
+
+      //   }
+      //   function logout(){
+      //     localStorage.removeItem("username")
+      //     location.reload()
+      //   }
     </script>
   </body>
 </html>

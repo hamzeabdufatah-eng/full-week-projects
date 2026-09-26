@@ -1,11 +1,12 @@
-// let a = 10;
-// let b = 3;
+let a = 10;
+let b = 3;
 
 //1 arithmetic operators
 //console.log(a+b)   +
 // console.log(a-b)  -
 // console.log(a*b)  *
 //console.log(a%b)   %
+//console.log(a/b)   /
 // console.log(a ** b)  ** (power)
 
 // 2 assign operators
@@ -44,7 +45,8 @@
 // console.log(5>=5)
 // console.log(5<=5)
 
-//4 logical operetors
+
+// //4 logical operetors
 // && and
 // || or
 // ! not
@@ -54,14 +56,20 @@
 // // let caniLearnAcoding=haveaLaptop || haveaElectiric
 // let caniLearnAcoding= !haveaElectiric
 // console.log(caniLearnAcoding)
-
+// let x=true
+// let y=false
+// console.log(x && y)
+// console.log(x || y)
+// console.log(!x)
+// console.log(!y)
 //5  increment & decrement
 // += add one
 // -= subtract one
 // let num=5
-// //num++
-// // num--
-// console.log(num)
+// num++
+// /num--
+// /console.log(num)
+
 
 //6 string operators
 // +
@@ -70,15 +78,22 @@
 //  let last="fitax"
 // console.log(first+" "+last)
 
+
 //7 ternary operators
 // condition ? value1: value2
 // let age=20
 // let result=age>=18  ? "adult":"child"
 // console.log(result)
+// let age=20;
+// let result=age>=28 ? "adult":"chiild";
+// console.log(result)
+// let school="jigjiga university"
+// let result=school==="jigjiga university" ? "yes":"no"
+// console.log(result)
 
 //8  type operators
 // typof and instanceof
-// typeof "hello wolrd"
+// typeof "hello world"
 // typeof 10
 // console.log(typeof"hello world")
 // console.log(typeof 10)
@@ -100,17 +115,23 @@
 //         city:"jigjiga"
 //     }
 // }
-// console.log(hotelWuxukuyaalaa.address.city)
-// const hotel1={name:"haaaracad Hotel", address:{city:"jigjiga"}}
+// console.log(hotelWuxukuyaalaa.address.city)#
+//  const hotel1={name:"haaaracad Hotel", address:{city:"jigjiga"}}
 // const hottel2={name:"sayid Hotel"}
-// console.log(hottel2.address?.city)
+// console.log(hotel1.address?.city)
 // const isticaamle={
-//     // hallodheh:(text)=>`soo dhawoow wll"${text}`,
-//     // hallodheh:(text)=>"soo dhawoow wll"+text
+//     hallodheh:(text)=>`soo dhawoow wll"${text}`,
+//     hallodheh:(text)=>"soo dhawoow wll"+text
 // }
 // const isticaamle2={}
 // console.log(isticaamle.hallodheh?.("hamza"))
 // console.log(isticaamle2.hallodheh?.())
+// const one={
+//     hallo:(text)=>`soo dhawoow wll${text}`,
+// hallo:(text)=>`wll come wll`+text
+// }
+//  const two={}
+// console.log(one.hallo?.("hamza"))
 // let user={
 //     id:1
 // }

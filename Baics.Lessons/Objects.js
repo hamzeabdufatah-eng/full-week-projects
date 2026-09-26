@@ -1,12 +1,12 @@
-//basic creating objects
+  //basic creating objects
 
 //object literal //qaabkan iyo qaabka hoosaa loo abuura objects
 
-//let person={
+// let person={
 // name:`xamse`,
-//age:26 ,
-//job:`developer`
-//}
+// age:26 ,
+// job:`developer`
+// }
 
 //using constructor //qaybta kalena waaka
 
@@ -19,8 +19,8 @@
 
 //barket notation waxa loo isticamaala xog dynamic eh ama oo tiro badan ayaa loo istimaalaa
 
-//const proverty=`age`
-//console.log(person[proverty])
+// const proverty=`age`
+// console.log(person[proverty])
 
 //modifying object  magici xamse waxa lagu badalay faarax modifying baana maamusha qaabkan
 //person.name=`siciid`
@@ -31,7 +31,7 @@
 
 //const books = {
 //title: `javascript`,
-//author: `mustaf`,
+//author: `mustaf`, 
 //page: 167,
 //}
 //for (let key in books ){//halkan waxa loo yaqaanaa for in waa key yada itus objects waa lagu loop gareeyaa (dulwareeg)
@@ -76,30 +76,30 @@
 //   darajada:`A-`
 // }]
 // console.log(arday[1].magaca)
-// let students = [
-//   {
-//     name: "hamza",
-//     grade: `A+`,
-//     student: `hrm`,
-//     Number: 500,
-//   },
-//   {
-//     name: "axmad",
-//     grade: "B+",
-//     student: `hrm`,
-//     Number: 300,
-//   },
-//   {
-//     name: "ome",
-//     grade: "B+",
-//     Number: 500,
-//     student: `IT`,
-//   },
-// ];
-// // let ardayda={...students}
-// console.log(arday)
-// // let arday=ardayda.forEach(arday=>{
-// //   console.log(`${arday.Number}`)
+let students = [
+  {
+    name: "hamza",
+    grade: `A+`,
+    student: `hrm`,
+    Number: 500,
+  },
+  {
+    name: "axmad",
+    grade: "B+",
+    student: `hrm`,
+    Number: 300,
+  },
+  {
+    name: "ome",
+    grade: "B+",
+    Number: 500,
+    student: `IT`,
+  },
+];
+let ardayda={...students}
+console.log(ardayda)
+// let arday=ardayda.forEach(arday=>{
+//   console.log(`${arday.Number}`)
 // })
 // let totalNumbers=student.reduce((sum,student)=>sum+student.Number,(0))
 // console.log(totalNumbers)
@@ -111,12 +111,12 @@
 //   return acc+num
 // },0)
 // console.log(numbers);
-let person = {
-  name: "hamza",
-  age: 20,
-  city: "jigjiga",
-  country:"ethiopia",
-};
+// let person = {
+//   name: "hamza",
+//   age: 20,
+//   city: "jigjiga",
+//   country:"ethiopia",
+// };
 
 // console.log(person.hasOwnProperty("name"))
 // console.log(Object.keys(person))  //key soon bandhig kaliaya

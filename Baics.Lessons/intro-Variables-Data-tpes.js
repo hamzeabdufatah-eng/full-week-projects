@@ -1,6 +1,7 @@
 // console.log("hello world");
+// )
 //console.log("hello wordl")
-// let name="hhamza";
+// let name="hamza";
 // let lasn="abdi"
 // let nextn="fatah"
 // let fullname=name+" "+lasn+ " "+nextn
@@ -21,12 +22,15 @@
 // console.log(birthyear);
 
 // data types weye qaybtan
-// let name = "hamse abdi"; //hadaad aragto xarfo cadi eh waa  String
+// let nme = "hamse abdi"; //hadaad aragto xarfo cadi eh waa  String
 // let age = 25; //number weye kani
 // console.log(typeof age);
 // let isstudent = true; //boolean aya ladhaha
 // console.log(typeof isstudent); //wa boolean ayuu kuu shegaya
-
+// let buug="horyaal"
+// let year=2019
+// let isread=false
+// console.log(typeof buug)
 // 1 string (xarfo)
 // let name = "hamza";
 // console.log(name);

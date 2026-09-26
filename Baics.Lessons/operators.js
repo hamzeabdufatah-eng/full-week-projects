@@ -1,5 +1,6 @@
- let a = 10;
- let b = 3;
+//  let a = 10;
+//  let b = 3;
+ 
 //arithmatic oprearoters
 // console.log(a+b); //adition weye
 // console.log (a-b);  //supstraction weye
@@ -40,6 +41,9 @@
 // /console.log(area);
 // let reminder=17%4;
 // console.log(reminder);
+// let radiue=5
+// let area=Math.pi * Math.power(radiue,2);
+// console.log(area)
 
 // excerice ka macalinka
 // part 1 xisaabdka arithmetic
@@ -87,35 +91,35 @@
 // console.log(fullname);
 
 // // |||||||
-  const form = document.getElementById("formList");
-      const inputList = document.getElementById("inputList");
-      const taskList = document.getElementById("taskList");
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const text=inputList.value
-        addlist(text);
-  tasks.push(text)
-  localStorage.setItem("tasks",JSON.stringify(tasks))
-        inputList.value="";
-      });
-      function addlist(text) {
-        const li = document.createElement("li");
-        li.innerHTML = `<span>${text}
-        <button type="button" class="deleteBtn">x</button>`;
-        taskList.appendChild(li);
-        li.querySelector(".deleteBtn").addEventListener("click",()=>{
-            li.remove();
-            const index=tasks.indexOf(text);
-            if (index >-1){
-                tasks.splice(index, 1)
-            }
-            localStorage.setItem("tasks",JSON.stringify(tasks))
-        } )
+  // const form = document.getElementById("formList");
+  //     const inputList = document.getElementById("inputList");
+  //     const taskList = document.getElementById("taskList");
+  //     form.addEventListener("submit", function (e) {
+  //       e.preventDefault();
+  //       const text=inputList.value
+  //       addlist(text);
+  // tasks.push(text)
+  // localStorage.setItem("tasks",JSON.stringify(tasks))
+  //       inputList.value="";
+  //     });
+  //     function addlist(text) {
+  //       const li = document.createElement("li");
+  //       li.innerHTML = `<span>${text}
+  //       <button type="button" class="deleteBtn">x</button>`;
+  //       taskList.appendChild(li);
+  //       li.querySelector(".deleteBtn").addEventListener("click",()=>{
+  //           li.remove();
+  //           const index=tasks.indexOf(text);
+  //           if (index >-1){
+  //               tasks.splice(index, 1)
+  //           }
+  //           localStorage.setItem("tasks",JSON.stringify(tasks))
+  //       } )
     
-      } 
-      const tasks=
-      JSON.parse(localStorage.getItem("tasks"))||[];
-      tasks.forEach(task=>{
-        addlist(task)
-      })
+  //     } 
+  //     const tasks=
+  //     JSON.parse(localStorage.getItem("tasks"))||[];
+  //     tasks.forEach(task=>{
+  //       addlist(task)
+  //     })
 

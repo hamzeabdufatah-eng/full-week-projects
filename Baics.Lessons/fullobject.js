@@ -5,6 +5,7 @@ let person={
     city:"jigjiga",
     country:"ethiopia",
 }
+
 //1 property helid
 // console.log(person.name)
 // console.log(person["age"])
@@ -48,6 +49,7 @@ let person={
 
 //12 object freeze kadip lama badali karo object ga hadaa freeze siiso
 // Object.freeze(person);
+
 //tusale
 // person.age=22;// dadii hore isbadali mayso 
 // person.name="abdi"//sido kale magaca isbadli maayo
@@ -55,6 +57,7 @@ let person={
 
 //13 object seal property cusub laguma dari karo lkn kuwi hore wa waa laga badbadli karaa
 //Object.seal(person)
+
 // tussale
 //person.study="srs";//tan marnaba kuma darsamayso person object ga
 //person.age=22 //lkn dada waxbaan kabadalay

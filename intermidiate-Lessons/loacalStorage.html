@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head> </head>
+  <body>
+<input id="nameInput" placeholder="magacaaga">
+<button id="saveBtn">Save Name</button>
+<button id="loadBtn">Load Name</button>
+<p id="result"></p>
+
+    <script>
+const nameInput=document.getElementById("nameInput");
+const saveBtn=document.getElementById("saveBtn");
+const laodBtn=document.getElementById("loadBtn");
+const result=document.getElementById("result");
+// saveBtn.addEventListener("click",()=>{
+//   const name=nameInput.value.trim();
+//   if(name===""){
+//     result.style.color="red"
+//     result.textContent="gali magacaaga"
+//     return;
+//   }
+//   localStorage.setItem("userName",name);
+//    result.style.color="green"
+//   result.textContent="magaca waa lakaydiyay"
+// })
+// laodBtn.addEventListener("click",()=>{
+//   const savedName=localStorage.getItem("userName");
+//   if(savedName===null){
+// result.textContent="magaca lama kaydin";
+// return;
+//   }
+//   result.textContent=`Magacaaga Waa:${savedName}`;
+// })
+// console.log()
+      // const userSetting = {
+      //   theme: "dark",
+      //   fontSize: "16px",
+      // };
+      // localStorage.setItem("setting", JSON.stringify(userSetting));
+      // const saveData = localStorage.getItem("setting");
+      // const persedSetting = JSON.parse(saveData);
+
+      // console.log(persedSetting.fontSize);
+      //   const studentSrs = {
+      //     name: "hamza abdi fatah",
+      //     department: "IT",
+      //   };
+      //  const STUDENT_KEY="student";
+      //  localStorage.setItem(STUDENT_KEY,JSON.stringify(studentSrs))
+      // const rowData=localStorage.getItem(STUDENT_KEY);
+      // if(rowData){
+      //     const studenData=JSON.parse(rowData)
+      //     console.log(studenData.name)
+      // }else{
+      //     console.error("xogtan ardayga lama helin")
+      // }
+
+      // data structure
+      // const cart = [
+      //   {
+      //     name: "protein",
+      //     price: 12000,
+      //   },
+      //   {
+      //     name: "Dumbbell",
+      //     price: 14000,
+      //   },
+      // ];
+      // localStorage.setItem("cart",JSON.stringify(cart));
+      // const savedCart=localStorage.getItem("cart")
+      // let cardData=[];
+      // if(savedCart){
+      //   try{
+      //     cardData=JSON.parse(savedCart);
+      //   }
+      //   catch(error){
+      //     console.error("Corrupted JSON dat in Local Storage",error)
+      //   }
+      // }
+      // console.log(cardData)
+    </script>
+  </body>
+</html>

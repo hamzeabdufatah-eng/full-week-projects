@@ -98,7 +98,7 @@
 // }
 // console.log(salaan())
 
-// function name(magaca="saaxiib"){
+// function name(magaca){
 //     return "hello,"+magaca+" soo dhawoow"
 // }
 // console.log(name("mustafe"))
@@ -121,6 +121,7 @@
 // }
 // console.log(ogaansho(3))
 
+
 // function areaRectangle(length,width){
 //     return length*width
 // }
@@ -132,3 +133,11 @@
 // console.log(xisaabiBedka(8, 4))
 // const areaRectangle=(length,width)=>length*width
 // console.log(areaRectangle (12,3))
+
+// function calculate(a,b){
+//     return a+b*2
+// }
+// const x=calculate(5,3);
+// const y=calculate(x,4);
+
+// console.log(y)

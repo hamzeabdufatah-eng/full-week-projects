@@ -1,4 +1,4 @@
-let fruits = ["apple", "banana", "mango"];
+// let fruits = ["apple", "banana", "mango"];
 
 //1 element helid
 // console.log(fruits[0])

@@ -2,16 +2,14 @@
 
 // let fruits = [`apple`, `banana`, `orange`]; //qaabksn iyo qaabkaas kalaa loo declare gareya
 // let numbers= new Array(1,2,3)                //qabkan wa loyaqaanaa constractor
-
 // accessing  and moffying elements //elements waxa lo yaqanaa sida apple 1 banana camal
-//console.log(fruits [0])
+// console.log(fruits )
 
 // modifying //qaabkan waa modifyng
 //fruits[1]=`canbe`;
 //console.log(fruits)
 
 //array methods
-
 // fruits.push(`cinab`)//push waa wax kusii dar value eh  meeshu ugu danbaysa
 // console.log(fruits)
 // fruits.pop() //pop waxbay kasaartaa value gaaga aarabto inaa kasaarto gadaal ayayna kasaartaa
@@ -23,8 +21,7 @@
 //console.log(fruits)
 
 //modfy and removing
-//  let letters=[`a`,`b`,`c`,`d`,]
-
+ 
 //splice //js splice waxay usiticmasha inaaad wax kaga saarta valuese kaaga
 //let removedLetters=letters.splice(1,2)
 //console.log(`removedLetters,`,removedLetters)
@@ -35,7 +32,6 @@
 //console.log(`letters`, letters)
 
 // iteration methods forEach, map,filter,reduce
-// let numbers=[1,2,3,4,5]
 
 // forEach
 //numbers.forEach(num=>{ //for each num wixi kujiro ayaya soo bandhigtay eeg
@@ -79,3 +75,18 @@
 // console.log(fruits.includes(`moos`)); kanna waa true ayaa ladhahay sida waa include
 
 //hi the world
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

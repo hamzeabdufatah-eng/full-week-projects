@@ -75,13 +75,14 @@
 // }
 // total(1,2,3,4)
 
+
 //13 scope
 // function test(){
 //     let name="hamse"
 //     console.log(name)
 // }
 // test()
-
+ 
 //14 function with array
 // let numbers=[1,2,3,4]
 // numbers.forEach(function(num){
@@ -97,3 +98,4 @@
 //     count(num-1)
 // }
 // count(6)
+

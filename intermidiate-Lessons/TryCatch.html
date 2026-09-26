@@ -9,24 +9,24 @@
   <body>
     <h1>User Name</h1>
     <input type="text" id="userName" />
-    <button onclick="farrinle()">Validate</button>
+    <button onclick="Validate()">Validate</button>
     <p id="msg"></p>
     <script>
-      function farrinle() {
+      function Validate() {
         const msg = document.getElementById("msg");
         try {
           const userName = document.getElementById("userName").value.trim();
           if (!userName) {
-            throw new Error("username cannot be empty");
+            throw new Error("username Cannot be empty");
           }
           if (userName.length < 3) {
-            throw new Error("username connot be atleast 3 characters");
+            throw new Error("userName must be be atleast 3 character");
           }
           msg.style.color = "green";
-          msg.innerText = "username is valid";
+          msg.innerText = "username is Valid";
         } catch (err) {
           msg.style.color = "red";
-          msg.innerText=err.message;
+          msg.innerText = err.message;
         }
       }
     </script>

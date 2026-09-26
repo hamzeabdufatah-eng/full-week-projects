@@ -87,12 +87,11 @@ const countries = [
 // console.log(totalPoulation)
 
 // console.log(countries.some(c=>c.name==="somalia"))//some waa soo hel camal sida includes midna ogoow includes object hal kama qaban karto string banaan yaalo maogiye
-//console.log(countries.map(c=>c.name).includes("somalia"))//jidkana map baa markii koobad lagu soo saaray magacyada wadamada kadip includes ba lagu daba xidhay
+// console.log(countries.map(c=>c.name).includes("somalia"))//jidkana map baa markii koobad lagu soo saaray magacyada wadamada kadip includes ba lagu daba xidhay
 
 // const magacyadaWadamad=countries.map(c=>c.name)//qaabkana wa isla qabka kore un map ba lagu sosaarya map aya laga dhex radiayay include markas
 // const soosar=magacyadaWadamad.includes("somalia")
 // console.log(soosar)
-
 
 // const maraykanka=countries.find(c=>c.name==="unated state")//qaabkanaa ugu haboon
 //     if (maraykanka) {
@@ -122,6 +121,7 @@ const countries = [
 //     email:"hamzefitax@gmail.com"
 
 // }
+
 // // const{id,name}=user
 // // console.log(name)
 // const xogta={
@@ -131,7 +131,8 @@ const countries = [
 // }
 // const {name:key}=xogta
 // console.log(key)
-//remanig variables //qaabkana wa jira name wixi kujira username iigu shub kadip magaca username kadhig isoo bandhig
+
+//renaming variables //qaabkana wa jira name wixi kujira username iigu shub kadip magaca username kadhig isoo bandhig
 
 // const{name:Username}=user
 // console.log(Username)
@@ -147,7 +148,7 @@ const countries = [
 // };
 // const {
 //   product: { name},
-// }=order 
+// }=order
 // console.log(name);
 // const order={
 //   id:102,
@@ -168,10 +169,11 @@ const countries = [
 //     ...order
 // }
 // console.log(newProduct)
-const newProduct={
-  ...order
-}
-console.log(newProduct)
+// const newProduct={
+//   ...order
+// }
+// console.log(newProduct)
+
 //functions
 //function ass variables
 
@@ -191,12 +193,13 @@ console.log(newProduct)
 //callback function
 //a callback is a function passed into onather function to be excuted later
 // function greet(name,callback){
-//   console.log("name"),
+//   console.log(name),
 //   callback()
 // }
 // greet("hamza",function(){
 //   console.log("callback is excuted")
 // })
+
 //calculator callback
 // function calculate(a,b ,operation){
 // return operation(a,b)
@@ -239,3 +242,93 @@ console.log(newProduct)
 //   scores: [96, 100, 74, 45],
 // };
 // console.log(calculateGrade(student1));
+
+// const products=[
+//   {name:"dumbbell(5kg)",category:"gymequipment",price:4000,stock:5},
+//   {name:"barbell",category:"gymequipment",price:4000,stock:10},
+//   {name:"gloves",category:"gymequipment",price:4000,stock:1},
+//   {name:"walk-machine",category:"gymequipment",price:4000,stock:4},
+//   {name:"whey-protein",category:"gymsupplements",price:4000,stock:12},
+//   {name:"protien-lactose-free",category:"gymsupplements",price:4000,stock:2},
+//   {name:"l=glutimine",category:"gymsupplements",price:4000,stock:14},
+//   {name:"creatine-mono",category:"gymsupplements",price:4000,stock:25},
+// ];
+// function iskuguKaydar(products){
+//   return products
+//   .filter(product=>product.stock>0).reduce((result,product)=>{
+//     const dhamaantoodLacagtooda=product.price*product.stock;
+//     if(product.category==="gymequipment"){
+//       result.agabka+=dhamaantoodLacagtooda
+//     }
+//     else{
+//       result.nafaqada+=dhamaantoodLacagtooda
+//     }
+//     return result;
+//   },{
+//     agabka:0,
+//     nafaqada:0,
+//   })
+// }
+// const result=iskuguKaydar(products)
+// console.log(result.agabka+result.nafaqada)
+// function MaalintaBarkaysan(maalmaha, index) {
+//   if (maalmaha[index] === "jimco") {
+//     return `jimco mubarak`;
+//   } else {
+//     return "jimco maaha";
+//   }
+// }
+// const maalmaha = ["talaado", "arbaco", "khamiis", "jimco"];
+// console.log(MaalintaBarkaysan(maalmaha, 3));
+
+// function getExpensiveProducts(products, index) {
+//   if (products[index].price > 100) {
+//     return "Expensive";
+//   } else {
+//     ("Cheap");
+//   }
+// }
+// const products = [
+//   { name: "mouse", price: 50 },
+//   { name: "mobile", price: 150 },
+// ];
+// console.log(getExpensiveProducts(products, 1));
+
+// const orders = [
+//   {
+//     customer: "ali",
+//     items: [
+//       { category: "tech", price: 500, qty: 2 },
+//       { category: "food", price: 100, qty: 3 },
+//     ],
+//   },
+//   {
+//     customer: "hassen",
+//     items: [
+//       { category: "tech", price: 300, qty: 1 },
+//       { category: "food", price: 50, qty: 4 },
+//     ],
+//   },
+//   {
+//     customer: "omer",
+//     items: [
+//       { category: "tech", price: 200, qty: 3 },
+//       { category: "food", price: 80, qty: 2 },
+//     ],
+//   },
+// ];
+// function Analyze(orders) {
+//   return orders
+//   .map(order=>{
+//     const total=order.items.reduce((sum,item)=>sum+item.price*item.qty,0);
+//     const TechTotal=order.items.filter(item=>item.category==="tech").reduce((sum,item)=>sum+item.price*item.qty,0);
+//     if(TechTotal>=900){
+//       return total-100
+//     }
+//     return total+50
+//   }
+// )
+// .filter(total=>total>700).reduce((sum,total)=>sum+total,0)
+//   }
+//   console.log(Analyze(orders))
+
